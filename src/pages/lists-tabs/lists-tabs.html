@@ -1,0 +1,15 @@
+
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My Lists</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-tabs>
+  <ion-tab tabIcon="checkmark" tabTitle="Todos" [root]="tab1"></ion-tab>
+  <ion-tab tabIcon="cart" tabTitle="Groceries" [root]="tab2"></ion-tab>
+</ion-tabs>

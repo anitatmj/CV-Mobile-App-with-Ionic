@@ -1,0 +1,62 @@
+<ion-header class="cth" no-border>
+
+  <ion-navbar class="cth">
+    <button ion-button menuToggle style="color:black">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>CV ME</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="margin-top:0px">
+
+<ion-grid class="g1">
+
+<b> <p style="text-align:center; font-size: 10px; color: transparent; height:5px; margin-top:7px; ">Anita S.Tr.T</p></b>
+ <b> <p style="text-align:center; font-size: 30px; color: transparent; height:5px; margin-top:7px; ">Anita S.Tr.T</p></b>
+  <b> <p style="text-align:center; font-size: 30px; color: transparent; height:5px; margin-top:7px; ">Anita S.Tr.T</p></b>
+
+</ion-grid>
+<ion-grid no-padding class="g2">
+ <img src="assets/img/poto.jpg" style="width: 32%; height: 30%;  align-content: center; display:block; margin-top:-60px; margin-left:35%"/>
+ <b> <p style="text-align:center; font-size: 15px; color: black; height:5px; margin-top:6px; ">Anita</p></b>
+   <p style="text-align:center; font-size: 13px; color: #05386B; height:5px; margin-top:1px;margin-bottom:1px; ">Technology of Information & Computer</p>
+
+<ion-row>
+<ion-col class="colom"col-5>
+ <button ion-button color="light" clear style="font-size:12px;color: #05386B"icon-start>
+    <ion-icon name="call"></ion-icon>082361248679
+  </button>
+</ion-col>
+<ion-col class="colom" col-7>
+  <button ion-button color="light" clear 
+  style="font-size:11px;color:#05386B;" icon-start>
+  <ion-icon name="mail"></ion-icon>
+  anitatmj01@gmail.com
+  </button>
+  </ion-col>
+  </ion-row>
+
+</ion-grid>
+
+
+<ion-tabs no-padding #myTabs>
+  <ion-tab tabIcon="person" tabTitle="Biodata" [root]="tab1"></ion-tab>
+  <ion-tab tabIcon="school" tabTitle="Education" [root]="tab2"></ion-tab>
+<ion-tab tabIcon="construct" tabTitle="Skill" [root]="tab3"></ion-tab>
+  <ion-tab tabIcon="ios-contact" tabTitle="Other" [root]="tab4"></ion-tab>
+
+</ion-tabs>
+
+
+</ion-content>
+
+<ion-fab right bottom>
+    <button ion-fab color="light" class="fab1"><ion-icon name="share"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab (click)="share()"><ion-icon name="logo-facebook" ></ion-icon></button>
+      <button  ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>

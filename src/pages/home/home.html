@@ -1,0 +1,22 @@
+<ion-menu transparent [content]="content">
+  <ion-header class="head">
+   <ion-toolbar class="warna" transparent >
+      <ion-title ></ion-title>
+      
+      <img padding class="i" src="../assets/img/aa.jpg" style="width: 25%; height: 25%;  align-content: center; display:block; margin:auto;">
+      <p style="color:white; text-align:center;">Developed by AnitaMeutuah</p>
+    </ion-toolbar>
+ 
+  </ion-header>
+  <ion-content class="con" transparent>
+    <ion-list  transparent >
+      <button class="b11"  menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+ 
+     </ion-content>
+ 
+      </ion-menu>
+ 
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
